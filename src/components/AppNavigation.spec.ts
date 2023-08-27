@@ -24,7 +24,7 @@ describe('# AppNavigation', () => {
     userStore.updateUser({ username: 'foo', email: '', token: '', bio: '', image: '' })
     cy.mount(AppNavigation)
 
-    cy.get('.nav-item').should('have.length', 4)
+    cy.get('.nav-item').should('have.length', 5)
     cy.contains('Home')
     cy.contains('New Post')
     cy.contains('Settings')
