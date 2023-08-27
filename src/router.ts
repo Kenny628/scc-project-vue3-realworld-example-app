@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteParams, RouteRecordRaw } from 'vue-router'
 import Home from './pages/Home.vue'
 import { isAuthorized } from './store/user'
+import About from './pages/AboutUs.vue'
 
 export type AppRouteNames =
   | 'global-feed'
@@ -15,8 +16,14 @@ export type AppRouteNames =
   | 'profile'
   | 'profile-favorites'
   | 'settings'
+  | 'about'
 
 export const routes: RouteRecordRaw[] = [
+  {
+    name: 'about', // Route name
+    path: '/about', // Route path
+    component: About, // Component for the "About" page
+  },
   {
     name: 'global-feed',
     path: '/',
@@ -75,6 +82,7 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('./pages/Settings.vue'),
   },
 ]
+
 export const router = createRouter({
   history: createWebHashHistory(),
   routes,
