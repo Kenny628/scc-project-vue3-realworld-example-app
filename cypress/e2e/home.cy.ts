@@ -58,7 +58,7 @@ describe('Homepage', () => {
     cy.wait('@getTags')
 
     cy.contains('Popular Tags')
-      .parent('.sidebar')
+      .parent('.popular-tags')
       .find('.tag-pill')
       .should('have.length', 8)
   })
