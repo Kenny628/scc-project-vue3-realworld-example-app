@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <div class="banner">
+    <div class="banner" style="background: #000;">
       <div class="container">
         <h1 class="logo-font">
           conduit
