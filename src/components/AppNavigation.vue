@@ -75,6 +75,11 @@ const allNavLinks = computed<NavLink[]>(() => [
     icon: 'ion-compose',
   },
   {
+    name: 'about',
+    title: 'About',
+    display: 'all',
+  },
+  {
     name: 'settings',
     title: 'Settings',
     display: 'authorized',
